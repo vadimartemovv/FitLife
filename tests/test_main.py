@@ -16,7 +16,7 @@ def extract_numbers(text: str) -> list[str]:
 
 def test_1_has_input(ast_tree):
     input_calls = [node for node in ast.walk(ast_tree) if is_call_to(node, "input")]
-    assert len(input_calls) >= 1, (
+    assert len(input_calls) >= 4, (
         "Ожидается минимум 4 вызова `input()` для имени, возраста, веса и роста."
     )
 
