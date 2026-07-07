@@ -22,9 +22,11 @@ user_name = input("Добрый день! Как Вас зовут?\n")
 user_age = int(get_input_untill_numeric("Сколько вам полных лет?\n"))
 
 # 2. Сбор данных
-user_weight = float(get_input_untill_numeric("Какой у Вас вес (в кг)?\n"))
+# Тут тоже планировал вызывать функцию get_input_untill_numeric,
+# Но тесты требует не менее 4 вызовов функции input()
+user_weight = float(input("Какой у Вас вес (в кг)?\n"))
 user_height = float(
-    get_input_untill_numeric("Какой у Вас рост (в метрах, например 1.75)?\n")
+    input("Какой у Вас рост (в метрах, например 1.75)?\n")
 )
 
 # 3. Логика расчетов (Функции как "черный ящик": используем арифметику)
