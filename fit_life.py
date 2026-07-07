@@ -34,10 +34,10 @@ bmi = user_weight / (user_height**2)
 
 # Подсчет воды: вес * 30 мл с конвертацией в литры
 WATER_PER_KG = 30
-water_needed = user_weight * WATER_PER_KG // 1000
+water_needed = (user_weight * WATER_PER_KG) / 1000
 
 # 4. Вывод красивого результата
 print(f"\nОтчет для пользователя: {user_name} ({user_age} г.)")
-print(f"Ваш Индекс Массы Тела: {bmi:.2f}")
-print(f"Рекомендуемая норма воды: {water_needed:.2f} л. в день", end="\n\n")
+print(f"Ваш Индекс Массы Тела: {bmi:.1f}")
+print(f"Рекомендуемая норма воды: {water_needed:.3f} л. в день", end="\n\n")
 print("Расчет окончен. Будьте здоровы!")
